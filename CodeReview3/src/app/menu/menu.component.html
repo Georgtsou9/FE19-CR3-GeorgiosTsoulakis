@@ -1,0 +1,29 @@
+<div class="container mycont">
+    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-sm-1 row-gap-5">
+        <div *ngFor="let x of dishes; index as index">
+            <div class="card" style="width: 20rem;">
+                <img src="{{x.image}}" class="card-img-top" alt="Oops" style="height: 13rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{x.name}}</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">€{{x.price}}</li>
+                </ul>
+                <div class="card-body">
+                    <div *ngIf="x.availiability; else elseBlock">
+                        <a routerLink="/details/{{index}}" class="card-link">
+                            <button type="button" class="btn btn-primary btn1">Details</button>
+                          </a>
+                          <a class="card-link">
+                            <button (click)="orderFood(index)" type="button" class="btn btn-success btn1">Order</button>
+                          </a>
+                    </div>
+                    <ng-template #elseBlock>
+                        <p class="notav ">This dish is not availiable</p>
+                    </ng-template>
+                  
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

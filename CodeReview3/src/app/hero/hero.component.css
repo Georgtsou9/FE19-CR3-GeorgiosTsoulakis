@@ -1,0 +1,47 @@
+.heroback{
+    height: 30rem;
+
+    background-repeat: no-repeat;
+    background-position: 20%;
+    background-size: cover;
+    background-image: url("../../assets/hero.jpg");
+}
+
+.heroupper{
+    height: 100%;color: white;
+    background-color: rgba(0, 0, 0, 0.443);
+    position: relative;
+
+  
+}
+
+h1{
+    font-family: "Lucida Handwriting";
+    position: absolute;
+    left: 50%;
+    top: 40%;
+   transform: translate(-50%,-40%);
+}
+
+p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn1{
+    position: absolute;
+    left: 47%;
+    top: 60%;
+    transform: translate(-97%,-60%);
+
+}
+
+.btn2{
+    position: absolute;
+    left: 53%;
+    top: 60%;
+    transform: translate(-33%,-60%);
+
+}

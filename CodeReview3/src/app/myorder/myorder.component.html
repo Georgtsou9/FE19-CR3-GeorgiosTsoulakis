@@ -1,0 +1,49 @@
+<div class="container mycont">
+    <div class="order">
+        <div class="orTitle">
+            <h3>My Order</h3>
+        </div>
+        <div *ngFor="let x of myorder" >
+            <div class="dishes">
+                <h4>{{x.name}}</h4>
+                <h4>Price: €{{x.price}}</h4>
+            </div>
+            <hr>
+            
+
+        </div>
+    </div>
+    <div class="amount">
+        <div class="amTitle">
+            <h3>Summury</h3>
+        </div>
+        <div class="flex">
+            <p>Products</p>
+            <p>€{{total}}</p>
+        </div>
+        <div class="flex">
+            <p>Service</p>
+            <p>€{{service.toFixed(2)}}</p>
+        </div>
+        <div class="flex">
+            <p>Discount</p>
+            <p>€{{discount}}</p>
+        </div>
+        <hr>
+        <div class="flex">
+            <b>Total Price</b>
+            <b>€{{finalAmount}}</b>
+        </div>
+        
+    </div>
+
+</div>
+
+<!-- <div *ngFor="let x of myorder ">
+    <p>{{x.name}}</p>
+
+</div>
+<p>{{total}}</p>
+<p>{{service}}</p>
+<p>Disc: {{discount}}</p>
+<p>Final Price: {{finalAmount}}</p> -->

@@ -1,0 +1,55 @@
+.mycont{
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 25%;
+
+
+}
+
+
+/* Orders Container */
+.order{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: 1px solid black;
+}
+
+.orTitle{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+    background-color:rgb(43,48,53);
+}
+
+.dishes{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+
+/* Total Amount Container */
+.amount{
+    border: 1px solid black;
+    
+}
+
+.amTitle{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+    background-color:rgb(43,48,53);
+}
+
+.flex{
+
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

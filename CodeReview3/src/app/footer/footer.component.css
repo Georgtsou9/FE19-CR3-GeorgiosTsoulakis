@@ -1,0 +1,13 @@
+.mynav{
+    color:white;
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+#text{
+    font-family: "Lucida Handwriting";
+}

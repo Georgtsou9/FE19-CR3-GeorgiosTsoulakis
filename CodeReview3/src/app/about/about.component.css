@@ -1,0 +1,25 @@
+/* Cont1 */
+h1{
+    font-family: "Lucida Handwriting";
+}
+
+.cont1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+#h2cont1{
+   text-align: end;
+}
+
+/* Cont2 */
+.cont2{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: rgb(224, 220, 220);
+}

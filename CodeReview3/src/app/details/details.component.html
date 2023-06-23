@@ -1,0 +1,17 @@
+<div class="mydiv">
+    <div class="card" style="width: 50rem;">
+        <img src="{{dish.image}}" class="card-img-top" alt="Oops">
+        <div class="card-body">
+          <h5 class="card-title">{{dish.name}}</h5>
+          <p class="card-text">{{dish.description}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">€{{dish.price}}</li>
+        </ul>
+        <div class="card-body">
+                  <a class="card-link">
+                    <button (click)="orderFood()" type="button" class="btn btn-success btn1">Order</button>
+                  </a>
+        </div>
+    </div>
+</div>
